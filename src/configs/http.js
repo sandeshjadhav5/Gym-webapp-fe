@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const baseURL = "http://localhost:8080";
+export const baseURL = "http://localhost:5000";
 
 const http = axios.create({ baseURL });
 const access_token = localStorage.getItem("access_token");
