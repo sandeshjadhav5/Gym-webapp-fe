@@ -13,7 +13,7 @@ const Hero = () => {
         className="absolute top-0 w-full h-full bg-center bg-cover"
         style={{
           backgroundImage:
-            "url('https://www.daimlertruck.com/fileadmin/_processed_/2/e/csm_bharatbenz-truck-range_d970ec1a05.webp')",
+            "url('https://images.unsplash.com/photo-1534438327276-14e5300c  3a48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltfGVufDB8fDB8fHww')",
         }}
       >
         <span
@@ -25,22 +25,23 @@ const Hero = () => {
         <div className="items-center flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div className="pr-12">
-              <h1 className="text-white font-semibold text-5xl">
-                Online Roads Goods Transportaion System
+              <h1 className="m-2 text-white font-bold text-5xl">
+                ABIT Fitness Plus
               </h1>
               <p className="mt-4 text-lg text-gray-300">
-                At ORGTS, we revolutionize the way businesses transport goods by
-                providing a seamless and efficient platform for booking trucks
-                online.
+                Find motivation and support alongside others striving for their
+                best. Our welcoming atmosphere, group classes, and experienced
+                trainers foster a sense of belonging while you level up your
+                fitness journey.
               </p>
             </div>{" "}
             <div className="m-8">
               {" "}
               <Link
-                href="/bookride"
+                href="/login"
                 className=" bg-green-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded"
               >
-                Book a Ride
+                Get Started
               </Link>
             </div>
           </div>

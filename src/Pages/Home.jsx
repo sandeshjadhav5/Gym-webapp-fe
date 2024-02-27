@@ -11,12 +11,11 @@ import ContactForm from "../Components/home/ContactForm";
 const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <Navbar />
       <Hero />
       <Features />
-      <DescriptionOne />
-      <DescriptionTwo />
       <FeaturesTwo />
-      <ContactForm />
+      <Footer />
     </div>
   );
 };

@@ -12,12 +12,13 @@ const Features = () => {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                     <i className="fas fa-award"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">Reliability</h6>
+                  <h6 className="text-xl font-semibold">Results-Focused</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    We understand the importance of timely and secure delivery.
-                    With our carefully vetted network of trucking partners, you
-                    can trust us to transport your goods safely and efficiently
-                    to their destination.
+                    AMGOI Fitness is your destination for achieving the fitness
+                    results you've always wanted. Our expert trainers,
+                    cutting-edge equipment, and diverse classes create a dynamic
+                    environment where you'll crush goals and build a stronger
+                    you.
                   </p>
                 </div>
               </div>
@@ -29,11 +30,13 @@ const Features = () => {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                     <i className="fas fa-retweet"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">Convenience</h6>
+                  <h6 className="text-xl font-semibold">Community Driven</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    Booking a truck has never been easier. Our user-friendly
-                    interface allows you to schedule pickups and deliveries with
-                    just a few clicks, saving you time and effort.
+                    More than just a workout, AMGOI Fitness is a community. Find
+                    motivation and support alongside others striving for their
+                    best. Our welcoming atmosphere, group classes, and
+                    experienced trainers foster a sense of belonging while you
+                    level up your fitness journey.
                   </p>
                 </div>
               </div>
@@ -45,14 +48,13 @@ const Features = () => {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
                     <i className="fas fa-fingerprint"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">Transparency</h6>
+                  <h6 className="text-xl font-semibold">Versatility</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    No hidden costs or surprises. We provide transparent pricing
-                    and real-time tracking so you can monitor your shipment
-                    every step of the way.Whether you need a single truck or a
-                    fleet of vehicles, we've got you covered. Our platform
-                    offers flexible options to accommodate your specific
-                    transportation requirements.
+                    Whether you want to conquer a marathon, gain muscle, boost
+                    your energy, or find a workout you actually enjoy, AMGOI
+                    Fitness has you covered. We offer the complete fitness
+                    package: specialized equipment, personalized training
+                    programs
                   </p>
                 </div>
               </div>
@@ -65,16 +67,13 @@ const Features = () => {
                 <i className="fas fa-user-friends text-xl"></i>
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                Booking a truck has never been easier
+                Join a Community That Pushes You Further
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                Simply log in to our platform, enter your pickup and delivery
-                details, and choose the appropriate truck size and type.
+                Full online support, State-of-the-Art Locker Rooms & Amenities
               </p>
               <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                Keep tabs on your goods in real-time with our advanced tracking
-                system. Know exactly where your shipment is and when it will
-                arrive at its destination.
+                Flexible Memberships - Your Workout, Your Way
               </p>
             </div>
 
@@ -82,7 +81,7 @@ const Features = () => {
               <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-600">
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJhbnNwb3J0fGVufDB8fDB8fHww"
+                  src="https://images.unsplash.com/photo-1561214078-f3247647fc5e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfDB8MHx8fDA%3D"
                   className="w-full align-middle rounded-t-lg"
                 />
                 <blockquote className="relative p-8 mb-4">
@@ -105,8 +104,8 @@ const Features = () => {
                     Top Notch Services
                   </h4>
                   <p className="text-md font-light mt-2 text-white">
-                    At ORGTS, we are committed to providing top-notch service
-                    and support to our customers. Our dedicated team is
+                    At AMGOI Fitness, we are committed to providing top-notch
+                    service and support to our customers. Our dedicated team is
                     available around the clock to address any questions or
                     concerns you may have.
                   </p>

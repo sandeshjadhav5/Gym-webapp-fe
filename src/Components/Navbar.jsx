@@ -16,11 +16,10 @@ export default function Navbar(props) {
           <a
             className={
               (props.transparent ? "text-white" : "text-gray-800") +
-              " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+              "text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             }
-            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
           >
-            Tailwind Starter Kit
+            ABIT Fitness Plus
           </a>
           <button
             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -42,29 +41,6 @@ export default function Navbar(props) {
           }
           id="example-navbar-warning"
         >
-          <ul className="flex flex-col lg:flex-row list-none mr-auto">
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
-              >
-                <i
-                  className={
-                    (props.transparent
-                      ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " far fa-file-alt text-lg leading-lg mr-2"
-                  }
-                />{" "}
-                Docs
-              </a>
-            </li>
-          </ul>
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="flex items-center">
               <a
@@ -74,20 +50,11 @@ export default function Navbar(props) {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="/bmi"
               >
-                <i
-                  className={
-                    (props.transparent
-                      ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " fab fa-facebook text-lg leading-lg "
-                  }
-                />
-                <span className="lg:hidden inline-block ml-2">Share</span>
+                <span className="inline-block ml-2">BMI</span>
               </a>
             </li>
-
             <li className="flex items-center">
               <a
                 className={
@@ -96,19 +63,11 @@ export default function Navbar(props) {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="/aboutus"
               >
-                <i
-                  className={
-                    (props.transparent
-                      ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") + " fab fa-twitter text-lg leading-lg "
-                  }
-                />
-                <span className="lg:hidden inline-block ml-2">Tweet</span>
+                <span className="inline-block ml-2">About us</span>
               </a>
             </li>
-
             <li className="flex items-center">
               <a
                 className={
@@ -117,19 +76,11 @@ export default function Navbar(props) {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="/contactus"
               >
-                <i
-                  className={
-                    (props.transparent
-                      ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") + " fab fa-github text-lg leading-lg "
-                  }
-                />
-                <span className="lg:hidden inline-block ml-2">Star</span>
+                <span className="inline-block ml-2">Contact Us</span>
               </a>
             </li>
-
             <li className="flex items-center">
               <button
                 className={
@@ -141,7 +92,7 @@ export default function Navbar(props) {
                 type="button"
                 style={{ transition: "all .15s ease" }}
               >
-                <i className="fas fa-arrow-alt-circle-down"></i> Download
+                Login
               </button>
             </li>
           </ul>

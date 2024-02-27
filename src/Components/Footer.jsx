@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
             <h5 className="text-lg mt-0 mb-2 text-gray-700">
-              Find us on any of these platforms, we respond 1-2 business days.
+              Find us on any of these platforms, we will respond
             </h5>
             <div className="mt-6">
               <button
@@ -42,25 +42,13 @@ export default function Footer() {
               >
                 <i className="flex fab fa-facebook-square"></i>
               </button>
-              <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-dribbble"></i>
-              </button>
-              <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-github"></i>
-              </button>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
-                  Useful Links
+                  AMGOI Fitness
                 </span>
                 <ul className="list-unstyled">
                   <li>
@@ -76,23 +64,7 @@ export default function Footer() {
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://blog.creative-tim.com"
                     >
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial"
-                    >
-                      Github
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free"
-                    >
-                      Free Products
+                      Contact
                     </a>
                   </li>
                 </ul>
@@ -103,34 +75,17 @@ export default function Footer() {
                 </span>
                 <ul className="list-unstyled">
                   <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                    >
-                      MIT License
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms"
-                    >
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">
                       Terms & Conditions
                     </a>
                   </li>
                   <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/privacy"
-                    >
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">
                       Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us"
-                    >
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">
                       Contact Us
                     </a>
                   </li>
@@ -143,14 +98,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © {new Date().getFullYear()} Tailwind Starter Kit by{" "}
-              <a
-                href="https://www.creative-tim.com"
-                className="text-gray-600 hover:text-gray-900"
-              >
-                Creative Tim
-              </a>
-              .
+              Copyright © {new Date().getFullYear()} AMGOI Fitness .
             </div>
           </div>
         </div>
