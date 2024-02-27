@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import http from "../configs/http";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [firstName, setFirstName] = useState("");
@@ -10,6 +11,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const isAuth = localStorage.getItem("isAuth") || false;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,16 +30,23 @@ const Login = () => {
       const response = await http.post(`/users/login`, payload);
       console.log("user added is", response);
       if (response.status === 200) {
-        console.log("success", response);
+        console.log("success", response.data.token);
+        localStorage.setItem("access_token", response.data.token);
+        localStorage.setItem("isAuth", true);
       }
-      toast("Registration Successfull");
+      toast("Login Successfull");
       setLoading(false);
     } catch (err) {
-      toast("Failed to Register");
+      toast("Failed to Login");
       console.log(err);
       setLoading(false);
     }
   };
+  useEffect(() => {
+    if (isAuth == "true") {
+      navigate("/");
+    }
+  }, [isAuth]);
   return (
     <div>
       <Navbar />
