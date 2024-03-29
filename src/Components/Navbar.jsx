@@ -4,7 +4,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
-  const isAuth=localStorage.getItem("isAuth") || ""
+  const isAuth=localStorage.getItem("isAuth") || false
+  const role=localStorage.getItem("role") || "user"
+
 //  console.log("isAuth",isAuth)
   const navigate=useNavigate()
 
@@ -96,6 +98,22 @@ export default function Navbar(props) {
                 <span className="inline-block ml-2">Contact Us</span>
               </a>
             </li>
+             {/* Add Dashboard tab if user is an admin */}
+             {role === "admin" && (
+              <li className="flex items-center">
+                <Link
+                  to="/dashboard"
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  }
+                >
+                  <span className="inline-block ml-2">Dashboard</span>
+                </Link>
+              </li>
+            )}
             {!isAuth && <li className="flex items-center">
               <Link to="/login">
                 <button

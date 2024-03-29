@@ -30,12 +30,10 @@ const Login = () => {
       const response = await http.post(`/users/login`, payload);
       console.log("user added is", response);
       if (response.status === 200) {
-        console.log("success", response.data.token);
-       
-          localStorage.setItem("access_token", response.data.token);
+        console.log("success", response?.data?.token);
+          localStorage.setItem("access_token", response?.data?.token);
           localStorage.setItem("isAuth", true);
-     
-       
+        localStorage.setItem("role",response?.data?.user?.role)
       }
       toast.success("Login Successful");
       setLoading(false);

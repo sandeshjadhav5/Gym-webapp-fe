@@ -14,7 +14,7 @@ const Features = () => {
                   </div>
                   <h6 className="text-xl font-semibold">Results-Focused</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    AMGOI Fitness is your destination for achieving the fitness
+                    ABIT Fitness is your destination for achieving the fitness
                     results you've always wanted. Our expert trainers,
                     cutting-edge equipment, and diverse classes create a dynamic
                     environment where you'll crush goals and build a stronger
@@ -32,7 +32,7 @@ const Features = () => {
                   </div>
                   <h6 className="text-xl font-semibold">Community Driven</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    More than just a workout, AMGOI Fitness is a community. Find
+                    More than just a workout, ABIT Fitness is a community. Find
                     motivation and support alongside others striving for their
                     best. Our welcoming atmosphere, group classes, and
                     experienced trainers foster a sense of belonging while you
@@ -51,7 +51,7 @@ const Features = () => {
                   <h6 className="text-xl font-semibold">Versatility</h6>
                   <p className="mt-2 mb-4 text-gray-600">
                     Whether you want to conquer a marathon, gain muscle, boost
-                    your energy, or find a workout you actually enjoy, AMGOI
+                    your energy, or find a workout you actually enjoy, ABIT
                     Fitness has you covered. We offer the complete fitness
                     package: specialized equipment, personalized training
                     programs
@@ -104,7 +104,7 @@ const Features = () => {
                     Top Notch Services
                   </h4>
                   <p className="text-md font-light mt-2 text-white">
-                    At AMGOI Fitness, we are committed to providing top-notch
+                    At ABIT Fitness, we are committed to providing top-notch
                     service and support to our customers. Our dedicated team is
                     available around the clock to address any questions or
                     concerns you may have.

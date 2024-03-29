@@ -6,6 +6,7 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import Excercises from "./Excercises";
 import VerifyToken from "./VerifyToken";
+import Dashboard from "./Dashboard";
 
 function Allroutes() {
   return (
@@ -17,6 +18,7 @@ function Allroutes() {
         <Route path="/verifytoken" element={<VerifyToken />} />
         <Route path="/bmi" element={<Bmi />} />
         <Route path="/excercises" element={<Excercises />} />
+        <Route path="/dashboard" element={<Dashboard/>}/>
       </Routes>
     </div>
   );

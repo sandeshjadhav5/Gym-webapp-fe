@@ -19,7 +19,7 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const payload = { firstName, lastName, email, password };
+    const payload = { firstName, lastName, email, password,role:"user" };
     console.log(payload);
     try {
       if (payload) {
