@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import http from "../configs/http";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -31,13 +31,17 @@ const Login = () => {
       console.log("user added is", response);
       if (response.status === 200) {
         console.log("success", response.data.token);
-        localStorage.setItem("access_token", response.data.token);
-        localStorage.setItem("isAuth", true);
+       
+          localStorage.setItem("access_token", response.data.token);
+          localStorage.setItem("isAuth", true);
+     
+       
       }
-      toast("Login Successfull");
+      toast.success("Login Successful");
       setLoading(false);
     } catch (err) {
-      toast("Failed to Login");
+      toast.error(err?.response?.data?.message || "An error occurred");
+     
       console.log(err);
       setLoading(false);
     }
@@ -135,7 +139,7 @@ const Login = () => {
           </div>
         </div>
       </section>{" "}
-      <ToastContainer />
+      <div><Toaster/></div>
     </div>
   );
 };

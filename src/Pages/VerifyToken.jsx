@@ -12,7 +12,7 @@ const VerifyToken = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const isAuth = localStorage.getItem("isAuth") || false;
+  const isTokenVerified = localStorage.getItem("isTokenVerified") || false;
   
 
   const handleSubmit = (e) => {
@@ -32,8 +32,9 @@ const VerifyToken = () => {
       console.log("res is", response);
       if (response.status === 200) {
         console.log("success", response.data.token);
-        localStorage.setItem("access_token", response.data);
-        localStorage.setItem("isAuth", true);
+        setTimeout(()=>{
+            localStorage.setItem("isTokenVerified",true)
+        },[2000])
       }
     
       toast.success('Token Verified', {
@@ -44,13 +45,14 @@ const VerifyToken = () => {
         toast.error(err?.response?.data?.message || "An error occurred");
       console.log(err);
       setLoading(false);
+      localStorage.setItem("isTokenVerified",false)
     }
   };
   useEffect(() => {
-    if (isAuth == "true") {
-      navigate("/");
+    if (isTokenVerified == "true") {
+      navigate("/login");
     }
-  }, [isAuth]);
+  }, [isTokenVerified]);
   return (
     <div>
       <Navbar />
