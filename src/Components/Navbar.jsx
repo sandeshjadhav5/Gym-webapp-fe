@@ -1,7 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const isAuth=localStorage.getItem("isAuth") || ""
+//  console.log("isAuth",isAuth)
+  const navigate=useNavigate()
+
+  const handleLogout=()=>{
+    localStorage.clear()
+    toast("Logging Out...")
+    setTimeout(()=>{
+      navigate("/login")
+    },[3000])
+   
+  }
   return (
     <nav
       className={
@@ -82,7 +96,7 @@ export default function Navbar(props) {
                 <span className="inline-block ml-2">Contact Us</span>
               </a>
             </li>
-            <li className="flex items-center">
+            {!isAuth && <li className="flex items-center">
               <Link to="/login">
                 <button
                   className={
@@ -97,10 +111,26 @@ export default function Navbar(props) {
                   Login
                 </button>
               </Link>
-            </li>
+            </li>}
+            {isAuth && <li className="flex items-center">
+             
+                <button onClick={handleLogout}
+                  className={
+                    (props.transparent
+                      ? "bg-white text-gray-800 active:bg-gray-100"
+                      : "bg-pink-500 text-white active:bg-pink-600") +
+                    " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  }
+                  type="button"
+                  style={{ transition: "all .15s ease" }}
+                >
+                  Logout
+                </button>
+           
+            </li>}
           </ul>
         </div>
-      </div>
+      </div>   <ToastContainer />
     </nav>
   );
 }
