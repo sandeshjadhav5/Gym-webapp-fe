@@ -49,7 +49,7 @@ const VerifyToken = () => {
     }
   };
   useEffect(() => {
-    if (isTokenVerified == "true") {
+    if (isTokenVerified) {
       navigate("/login");
     }
   }, [isTokenVerified]);
