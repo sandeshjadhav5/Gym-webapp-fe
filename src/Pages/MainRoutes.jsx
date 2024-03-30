@@ -7,6 +7,7 @@ import SignUp from "./SignUp";
 import Excercises from "./Excercises";
 import VerifyToken from "./VerifyToken";
 import Dashboard from "./Dashboard";
+import Facilities from "./Facilities";
 
 function Allroutes() {
   return (
@@ -19,6 +20,7 @@ function Allroutes() {
         <Route path="/bmi" element={<Bmi />} />
         <Route path="/excercises" element={<Excercises />} />
         <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/facilities" element={<Facilities/>}/>
       </Routes>
     </div>
   );

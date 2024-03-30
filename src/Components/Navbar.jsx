@@ -93,9 +93,9 @@ export default function Navbar(props) {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="/contactus"
+                href="/facilities"
               >
-                <span className="inline-block ml-2">Contact Us</span>
+                <span className="inline-block ml-2">Facilities</span>
               </a>
             </li>
              {/* Add Dashboard tab if user is an admin */}
