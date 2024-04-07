@@ -8,6 +8,7 @@ import Excercises from "./Excercises";
 import VerifyToken from "./VerifyToken";
 import Dashboard from "./Dashboard";
 import Facilities from "./Facilities";
+import Payments from "./Payments";
 
 function Allroutes() {
   return (
@@ -21,6 +22,7 @@ function Allroutes() {
         <Route path="/excercises" element={<Excercises />} />
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/facilities" element={<Facilities/>}/>
+        <Route path="/payments" element={<Payments/>}/>
       </Routes>
     </div>
   );

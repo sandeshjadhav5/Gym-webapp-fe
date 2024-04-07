@@ -6,6 +6,7 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const isAuth=localStorage.getItem("isAuth") || false
   const role=localStorage.getItem("role") || "user"
+  const isPaymentDone=localStorage.getItem("isPaymentsDone") || false
 
 //  console.log("isAuth",isAuth)
   const navigate=useNavigate()
@@ -111,6 +112,21 @@ export default function Navbar(props) {
                   }
                 >
                   <span className="inline-block ml-2">Dashboard</span>
+                </Link>
+              </li>
+            )}
+               {!isPaymentDone && (
+              <li className="flex items-center">
+                <Link
+                  to="/payments"
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  }
+                >
+                  <span className="inline-block ml-2">Payments</span>
                 </Link>
               </li>
             )}
