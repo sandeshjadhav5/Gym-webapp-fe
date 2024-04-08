@@ -115,7 +115,7 @@ export default function Navbar(props) {
                 </Link>
               </li>
             )}
-               {!isPaymentDone && (
+               {!isPaymentDone && isAuth &&  (
               <li className="flex items-center">
                 <Link
                   to="/payments"

@@ -93,6 +93,21 @@ const Dashboard = () => {
     }
   };
 
+  // Function to generate random gym timing
+  const generateRandomTiming = () => {
+    const startHour = Math.floor(Math.random() * 12); // Generate random hour between 0 and 11
+    const startMinutes = Math.floor(Math.random() * 60); // Generate random minutes between 0 and 59
+
+    const endHour = startHour + 1; // End hour is 1 hour ahead of start hour
+    const endMinutes = Math.floor(Math.random() * 60); // Generate random minutes between 0 and 59
+
+    // Format the timings
+    const formatTime = (hour, minutes) => {
+      return `${hour < 10 ? '0' + hour : hour}:${minutes < 10 ? '0' + minutes : minutes}`;
+    };
+
+    return `${formatTime(startHour, startMinutes)} to ${formatTime(endHour, endMinutes)}`;
+  };
 
   const closeModal = () => {
     setShowEditModal(false);
@@ -137,6 +152,9 @@ const Dashboard = () => {
                 Fees Paid
               </th>
               <th scope="col" className="px-6 py-3">
+                Gym Timing
+              </th>
+              <th scope="col" className="px-6 py-3">
                 Actions
               </th>
             </tr>
@@ -158,6 +176,9 @@ const Dashboard = () => {
                 </td>
                 <td className="px-6 py-4">
                   {user.paymentDone ? 'Yes' : 'No'}
+                </td>
+                <td className="px-6 py-4">
+                {generateRandomTiming()}
                 </td>
                 <td className="px-6 py-4">
                 <button className='text-yellow-600 font-bold' onClick={handleEdit(user._id)}>Edit</button>
