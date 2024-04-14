@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div className="pr-12">
               <h1 className="m-2 text-white font-bold text-5xl">
-                ABIT Fitness Plus
+                Fitness Plus
               </h1>
               <p className="mt-4 text-lg text-gray-300">
                 Find motivation and support alongside others striving for their
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="m-8">
               {" "}
               <Link
-                href="/login"
+                to="/bmi"
                 className=" bg-green-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded"
               >
                 Get Started

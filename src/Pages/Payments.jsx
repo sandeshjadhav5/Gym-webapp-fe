@@ -44,7 +44,7 @@ const Payments = () => {
       <Navbar />
       <div className="container mx-auto mt-10">
         <h1 className="text-3xl font-bold text-center mb-8">
-          ABIT Fitness Plus Plans
+          Fitness Plus Plans
         </h1>
         <div className="grid grid-cols-2 gap-8">
         <div className="border rounded-lg p-6">

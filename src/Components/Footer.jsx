@@ -48,7 +48,7 @@ export default function Footer() {
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
-                  ABIT Fitness Plus
+                  Fitness Plus
                 </span>
                 <ul className="list-unstyled">
                   <li>
@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © {new Date().getFullYear()} ABIT Fitness Plus.
+              Copyright © {new Date().getFullYear()} Fitness Plus.
             </div>
           </div>
         </div>
